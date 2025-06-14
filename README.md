@@ -6,9 +6,10 @@
 
 # MAP_FE
 
-<em>Transforming News into Actionable Insights Everywhere</em>
+<em>Transforming News into Insightful Global Perspectives</em>
 
 <!-- BADGES -->
+<img src="https://img.shields.io/github/license/leegitae00/Map_FE?style=flat&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
 <img src="https://img.shields.io/github/last-commit/leegitae00/Map_FE?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
 <img src="https://img.shields.io/github/languages/top/leegitae00/Map_FE?style=flat&color=0080ff" alt="repo-top-language">
 <img src="https://img.shields.io/github/languages/count/leegitae00/Map_FE?style=flat&color=0080ff" alt="repo-language-count">
@@ -27,42 +28,57 @@
 
 ---
 
-## 📄 Table of Contents
+## Table of Contents
 
-- [Overview](#-overview)
-- [Getting Started](#-getting-started)
-    - [Prerequisites](#-prerequisites)
-    - [Installation](#-installation)
-    - [Usage](#-usage)
-    - [Testing](#-testing)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-
----
-
-## ✨ Overview
-
-
-
----
-
-## 📌 Features
-
-|      | Component            | Details                                                                                     |
-| :--- | :------------------- | :------------------------------------------------------------------------------------------ |
-| ⚙️  | **Architecture**     | <ul><li>Single Page Application (SPA) built with React</li><li>Component-based structure</li><li>Uses React Router for client-side routing</li></ul> |
-| 🔩 | **Code Quality**     | <ul><li>Consistent code style with ESLint & Prettier</li><li>Functional components with hooks</li><li>Clear separation of concerns</li></ul> |
-| 📄 | **Documentation**    | <ul><li>Basic README with setup instructions</li><li>Inline comments in codebase</li><li>Limited API documentation</li></ul> |
-| 🔌 | **Integrations**      | <ul><li>Charts via react-chartjs-2 and react-fusioncharts</li><li>HTTP requests handled with axios</li><li>Routing with react-router-dom</li></ul> |
-| 🧩 | **Modularity**        | <ul><li>Reusable chart components</li><li>Separation of UI and data fetching logic</li><li>Uses custom hooks for state management</li></ul> |
-| 🧪 | **Testing**           | <ul><li>Uses @testing-library/react for component tests</li><li>Includes some jest-dom assertions</li><li>Limited end-to-end testing coverage</li></ul> |
-| ⚡️  | **Performance**       | <ul><li>Uses React's memoization where appropriate</li><li>Optimized chart rendering</li><li>Web Vitals included for performance metrics</li></ul> |
-| 🛡️ | **Security**          | <ul><li>Basic security practices with HTTPS</li><li>Input sanitization not explicitly shown</li><li>Dependencies regularly updated</li></ul> |
-| 📦 | **Dependencies**      | <ul><li>Relies on React, react-router-dom, axios, chart.js, fusioncharts</li><li>Uses npm for package management</li><li>Includes testing libraries like @testing-library</li></ul> |
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
+- [Features](#features)
+- [Project Structure](#project-structure)
+    - [Project Index](#project-index)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgment](#acknowledgment)
 
 ---
 
-## 📁 Project Structure
+## Overview
+
+Map_FE is a React-based developer tool crafted to create interactive, geographically-aware news applications. It combines dynamic map visualizations with integrated weather data and multimedia content, enabling rich, user-driven exploration of news stories across regions.
+
+**Why Map_FE?**
+
+This project empowers developers to build immersive, data-driven news platforms with ease. The core features include:
+
+- 🧭 **🌎 Geographic News Mapping:** Visualize news articles on an interactive map, enhancing spatial understanding.
+- 🎥 **📡 Multimedia Integration:** Enrich news stories with relevant YouTube videos and weather updates.
+- 🗺️ **🔍 User-Driven Exploration:** Support dynamic searches, real-time marker updates, and detailed info windows.
+- ⚙️ **🛠️ Streamlined Development:** Simplify setup and maintenance with well-organized scripts and dependencies.
+- 📊 **📈 Data-Rich Visualizations:** Combine multiple data sources for comprehensive geographic insights.
+
+---
+
+## Features
+
+|      | Component          | Details                                                                                     |
+| :--- | :----------------- | :------------------------------------------------------------------------------------------ |
+| ⚙️  | **Architecture**   | <ul><li>React-based SPA</li><li>Component-driven structure</li><li>Uses React Router for navigation</li></ul> |
+| 🔩 | **Code Quality**   | <ul><li>Consistent code style with ESLint</li><li>Uses functional components with hooks</li><li>Organized folder structure</li></ul> |
+| 📄 | **Documentation**  | <ul><li>README.md with project overview</li><li>Inline comments in code</li><li>Limited API docs, mostly in code</li></ul> |
+| 🔌 | **Integrations**    | <ul><li>axios for API calls</li><li>react-chartjs-2 & fusioncharts for data visualization</li><li>react-router-dom for routing</li></ul> |
+| 🧩 | **Modularity**      | <ul><li>Reusable React components</li><li>Separation of concerns between UI and data fetching</li><li>Custom hooks for logic encapsulation</li></ul> |
+| 🧪 | **Testing**         | <ul><li>@testing-library/react for component tests</li><li>@testing-library/jest-dom for assertions</li><li>Basic test coverage, no end-to-end tests</li></ul> |
+| ⚡️  | **Performance**     | <ul><li>Uses React.memo and useCallback for optimization</li><li>Minimal re-renders observed</li><li>Web-vitals included for performance metrics</li></ul> |
+| 🛡️ | **Security**        | <ul><li>Basic security practices, no explicit security features</li><li>API calls secured via HTTPS</li></ul> |
+| 📦 | **Dependencies**    | <ul><li>Relies on React, react-router-dom, axios, chart.js, fusioncharts, testing-library</li><li>Uses npm as package manager</li></ul> |
+
+---
+
+## Project Structure
 
 ```sh
 └── Map_FE/
@@ -89,16 +105,92 @@
 
 ---
 
-## 🚀 Getting Started
+### Project Index
 
-### 📋 Prerequisites
+<details open>
+	<summary><b><code>MAP_FE/</code></b></summary>
+	<!-- __root__ Submodule -->
+	<details>
+		<summary><b>__root__</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ __root__</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='https://github.com/leegitae00/Map_FE/blob/master/package.json'>package.json</a></b></td>
+					<td style='padding: 8px;'>- Defines project metadata, dependencies, and scripts essential for building, testing, and running the React-based news application<br>- It orchestrates the setup environment, manages package versions, and streamlines development workflows, ensuring a consistent foundation for delivering a dynamic, data-driven news platform with integrated charts and routing capabilities.</td>
+				</tr>
+			</table>
+		</blockquote>
+	</details>
+	<!-- src Submodule -->
+	<details>
+		<summary><b>src</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ src</b></code>
+			<table style='width: 100%; border-collapse: collapse;'>
+			<thead>
+				<tr style='background-color: #f8f9fa;'>
+					<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+					<th style='text-align: left; padding: 8px;'>Summary</th>
+				</tr>
+			</thead>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='https://github.com/leegitae00/Map_FE/blob/master/src/App.js'>App.js</a></b></td>
+					<td style='padding: 8px;'>- Provides the entry point for the application by rendering the main news mapping interface<br>- It orchestrates the display of the NewsMapPage component, serving as the foundational component that integrates the core functionality of visualizing news data geographically within the overall project architecture.</td>
+				</tr>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='https://github.com/leegitae00/Map_FE/blob/master/src/index.js'>index.js</a></b></td>
+					<td style='padding: 8px;'>- Initialize the React application by rendering the main App component into the DOM, establishing the entry point for the user interface<br>- It sets up the root rendering context, enabling the entire web app to display and function within the designated HTML element, thereby integrating React with the static HTML structure for seamless user interactions.</td>
+				</tr>
+			</table>
+			<!-- pages Submodule -->
+			<details>
+				<summary><b>pages</b></summary>
+				<blockquote>
+					<div class='directory-path' style='padding: 8px 0; color: #666;'>
+						<code><b>⦿ src.pages</b></code>
+					<table style='width: 100%; border-collapse: collapse;'>
+					<thead>
+						<tr style='background-color: #f8f9fa;'>
+							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+							<th style='text-align: left; padding: 8px;'>Summary</th>
+						</tr>
+					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='https://github.com/leegitae00/Map_FE/blob/master/src/pages/NewsMapPage.js'>NewsMapPage.js</a></b></td>
+							<td style='padding: 8px;'>- Provides an interactive map interface for visualizing news articles related to specific regions and categories<br>- Integrates weather data and relevant YouTube videos to enrich the news context<br>- Facilitates user-driven searches, dynamically updating map markers, info windows, and a sidebar list of articles, thereby enabling comprehensive geographic and topical news exploration within the overall application architecture.</td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='https://github.com/leegitae00/Map_FE/blob/master/src/pages/WeatherWidget.js'>WeatherWidget.js</a></b></td>
+							<td style='padding: 8px;'>- Provides a weather widget that fetches and displays current weather conditions and short-term forecasts for a specified region<br>- Integrates location data via Kakao Maps API and retrieves weather information from OpenWeatherMap, enabling dynamic, region-specific weather updates within the application’s user interface.</td>
+						</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
+</details>
+
+---
+
+## Getting Started
+
+### Prerequisites
 
 This project requires the following dependencies:
 
 - **Programming Language:** JavaScript
 - **Package Manager:** Npm
 
-### ⚙️ Installation
+### Installation
 
 Build Map_FE from the source and install dependencies:
 
@@ -122,7 +214,7 @@ Build Map_FE from the source and install dependencies:
 ❯ npm install
 ```
 
-### 💻 Usage
+### Usage
 
 Run the project with:
 
@@ -132,7 +224,7 @@ Run the project with:
 npm start
 ```
 
-### 🧪 Testing
+### Testing
 
 Map_fe uses the {__test_framework__} test framework. Run the test suite with:
 
@@ -143,6 +235,67 @@ npm test
 ```
 
 ---
+
+## Roadmap
+
+- [X] **`Task 1`**: <strike>Implement feature one.</strike>
+- [ ] **`Task 2`**: Implement feature two.
+- [ ] **`Task 3`**: Implement feature three.
+
+---
+
+## Contributing
+
+- **💬 [Join the Discussions](https://github.com/leegitae00/Map_FE/discussions)**: Share your insights, provide feedback, or ask questions.
+- **🐛 [Report Issues](https://github.com/leegitae00/Map_FE/issues)**: Submit bugs found or log feature requests for the `Map_FE` project.
+- **💡 [Submit Pull Requests](https://github.com/leegitae00/Map_FE/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+
+<details closed>
+<summary>Contributing Guidelines</summary>
+
+1. **Fork the Repository**: Start by forking the project repository to your github account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a git client.
+   ```sh
+   git clone https://github.com/leegitae00/Map_FE
+   ```
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+   ```sh
+   git checkout -b new-feature-x
+   ```
+4. **Make Your Changes**: Develop and test your changes locally.
+5. **Commit Your Changes**: Commit with a clear message describing your updates.
+   ```sh
+   git commit -m 'Implemented new feature x.'
+   ```
+6. **Push to github**: Push the changes to your forked repository.
+   ```sh
+   git push origin new-feature-x
+   ```
+7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+8. **Review**: Once your PR is reviewed and approved, it will be merged into the main branch. Congratulations on your contribution!
+</details>
+
+<details closed>
+<summary>Contributor Graph</summary>
+<br>
+<p align="left">
+   <a href="https://github.com{/leegitae00/Map_FE/}graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=leegitae00/Map_FE">
+   </a>
+</p>
+</details>
+
+---
+
+## License
+
+Map_fe is protected under the [LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+
+---
+
+## Acknowledgments
+
+- Credit `contributors`, `inspiration`, `references`, etc.
 
 <div align="left"><a href="#top">⬆ Return</a></div>
 
